@@ -1,0 +1,10 @@
+input {
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 8px;
+    box-sizing: border-box;
+    border: none;
+    background: #f8f9fa;
+    border-bottom: 2px solid #69D2AA;
+}
