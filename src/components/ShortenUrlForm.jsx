@@ -17,7 +17,7 @@ const ShortenUrlForm = () => {
             const response = await fetch('https://api-ssl.bitly.com/v4/shorten', {
                 method: 'POST',
                 headers: {
-                    Authorization: 'Bearer eee48973e2b27d9c014b56c7962e702f96b5baed',
+                    Authorization: `Bearer ${process.env.REACT_APP_AUTORIZATION_TOKEN}`,
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify({ long_url: `${value}`, domain: 'bit.ly' }),
